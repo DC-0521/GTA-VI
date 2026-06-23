@@ -27,3 +27,15 @@ El flujo de trabajo se rige estrictamente por políticas de bifurcación de rama
 | `feature/contador-plataformas` | Lógica de temporizadores en tiempo real, hooks de React (`useState`, `useEffect`) y compatibilidad de consolas[cite: 1]. | Asignado (Repo Leader)[cite: 1] |
 | `feature/personajes` | Maquetación, tarjetas informativas e inserción de assets biográficos de los protagonistas[cite: 1]. | Asignado a Compañero[cite: 1] |
 | `feature/mapa-vice-city` | Implementación de coordenadas e interactividad cartográfica del entorno urbano[cite: 1]. | Asignado a Compañero[cite: 1] |
+## 🗂️ 4. Arquitectura del Software y Componentes React
+Para garantizar la modularidad y el cumplimiento de los estándares de desarrollo limpio, la arquitectura de la aplicación se fragmenta en componentes desacoplados bajo el directorio `src/components/`:
+* `src/App.jsx`: Componente raíz de la aplicación que coordina el flujo global y las capas de interfaz.
+* `src/components/BackgroundVideo.jsx`: Gestiona la capa inmersiva de fondo mediante la simulación responsiva de la imagen principal (`fondo.png`) cubriendo la totalidad de la pantalla.
+* `src/components/MainMenu.jsx`: Componente del menú centralizado que itera e imprime dinámicamente las opciones del equipo.
+* `src/components/AudioPlayer.jsx`: Componente de reproducción multimedia aislado de forma absoluta de los flujos visuales para evitar desbordamientos del viewport.
+
+## 🎨 5. Directrices de Diseño Visual e Interfaz de Usuario (UI/UX)
+El diseño visual implementa técnicas de desarrollo web avanzado mediante hojas de estilo CSS (`src/App.css`), asegurando criterios estéticos estilo *Rockstar Games*:
+1. **Contraste Inmersivo:** Uso de capas de degradado lineal oscurecido para contrarrestar la alta iluminación de la imagen de fondo y mantener la legibilidad.
+2. **Efectos Neón:** Implementación de sombreados dinámicos en texto (`text-shadow`) y filtros de caída de sombra en imágenes (`drop-shadow`) emulando los espectros cromáticos característicos de Vice City.
+3. **Aislamiento Absoluto:** Posicionamiento de elementos multimedia críticos en coordenadas independientes (`position: absolute;` y `z-index`) previniendo distorsiones visuales o barras de desplazamiento innecesarias (`overflow: hidden;`).
