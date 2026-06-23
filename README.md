@@ -1,16 +1,13 @@
-# React + Vite
+# 🎮 Portal Informativo Inmersivo — GTA VI
+### 🏫 Instituto Superior Universitario Almirante Illingworth (AITEC)
+**Curso:** 3er Semestre — Desarrollo de Software  
+**Asignatura:** Diseño Web
+**Grupo:** C
+**Integrantes** Daniel Carpio - Joseph Castro - Michael Peralta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📌 1. Introducción y Propósito del Sitio
+Este proyecto consiste en el diseño y desarrollo de una aplicación web SPA (Single Page Application) utilizando el framework **React.js** y la herramienta de construcción **Vite**. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El enfoque visual rompe con los esquemas de maquetación tradicionales, implementando una interfaz inmersiva inspirada en los menús de inicio de los videojuegos de *Rockstar Games*, específicamente tematizada en **Grand Theft Auto VI (GTA VI)**. El portal funciona como un sitio web informativo y de preventa real, centralizando los esfuerzos del equipo en tres módulos interactivos esenciales y eliminando simulaciones de juego no funcionales para priorizar una entrega técnica robusta, limpia y modular.
