@@ -3,7 +3,7 @@
 **Curso:** 3er Semestre — Desarrollo de Software  
 **Asignatura:** Diseño Web
 **Grupo:** C
-**Integrantes** Daniel Carpio - Joseph Castro - Michael Peralta
+**Integrantes:** Daniel Carpio - Joseph Castro - Michael Peralta
 
 ---
 
