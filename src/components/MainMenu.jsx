@@ -5,7 +5,7 @@ export default function MainMenu({ onSelectOption }) {
   const menuOptions = [
     'CONTADOR GTA VI',
     'PERSONAJES',
-    'MAPA DE VICE CITY'
+    'MAPA DE VICE CITY' // <--- Mapeado perfectamente con el estado central
   ];
 
   return (

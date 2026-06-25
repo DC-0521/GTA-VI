@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import MainMenu from './components/MainMenu';
 import BackgroundVideo from './components/BackgroundVideo';
 import AudioPlayer from './components/AudioPlayer';
-// Importamos el componente de tu compañero de forma aislada
 import Characters from './components/Characters/Characters'; 
-import Contador from './components/Contador/Contador'; // <--- Importamos tu nuevo componente de contador
+import Contador from './components/Contador/Contador'; 
+import ViceCityMap from './components/ViceCityMap/ViceCityMap'; // <--- Importamos el mapa de tu compañero
 import './App.css';
 
 export default function App() {
@@ -17,12 +17,15 @@ export default function App() {
       <BackgroundVideo />
 
       <div className="interface-layer">
-        {/* Renderizado condicional basado en lo que el usuario seleccione */}
+        {/* Renderizado condicional principal */}
         {currentSection === 'menu' ? (
           // Le pasamos la función al menú para escuchar los clics
           <MainMenu onSelectOption={(option) => setCurrentSection(option)} />
+        ) : currentSection === 'MAPA DE VICE CITY' ? (
+          // Si es el mapa, se renderiza a pantalla completa con su propia navegación integrada
+          <ViceCityMap onBack={() => setCurrentSection('menu')} />
         ) : (
-          /* Contenedor adaptado para mostrar el trabajo correspondiente */
+          /* Contenedor adaptado para Personajes y Contador */
           <div className="section-view-container" style={{ width: '100%', textAlign: 'center', overflowY: 'auto', maxHeight: '90vh' }}>
             {/* Botón de regreso con estética Rockstar */}
             <button 
