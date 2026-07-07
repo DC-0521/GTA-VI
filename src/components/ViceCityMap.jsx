@@ -32,7 +32,6 @@ const ViceCityMap = ({ onBack }) => {
 
     return (
         <section class="map-section">
-            {/* Botón interactivo para regresar al MainMenu */}
             <button onClick={onBack} class="btn-volver">
                 ← VOLVER AL MENÚ
             </button>
@@ -41,7 +40,6 @@ const ViceCityMap = ({ onBack }) => {
             <p class="section-subtitle">Explora las zonas y distritos filtrados basados en el Mapping Project</p>
 
             <div class="map-container">
-                {/* Contenedor del Mapa Filtrado (Iframe interactivo de la comunidad) */}
                 <div class="map-wrapper">
                     <iframe
                         class="map-frame"
@@ -51,7 +49,6 @@ const ViceCityMap = ({ onBack }) => {
                     ></iframe>
                 </div>
 
-                {/* Grid de Regiones con el estilo exacto de tus personajes */}
                 <div class="regions-grid">
                     {regions.map((region) => (
                         <div key={region.id} class="region-card">
