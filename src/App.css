@@ -1,0 +1,124 @@
+/* ==========================================================================
+   CONFIGURACIÓN DEL FONDO (FONDO.PNG)
+   ========================================================================== */
+
+/* Contenedor del simulador de fondo */
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* El contenedor que ahora renderiza tu fondo.png */
+.placeholder-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;       /* Hace que la imagen cubra toda la pantalla sin deformarse */
+  background-position: center;  /* Centra el paisaje en el medio del navegador */
+  background-repeat: no-repeat; /* Evita que la imagen se duplique */
+}
+
+
+/* ==========================================================================
+   ESTRUCTURA DEL MENÚ CENTRAL Y LOGO (ESTILO ROCKSTAR)
+   ========================================================================== */
+
+/* Estructura del menú central */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Animación y tamaño del logo VI */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInDown 1.5s ease-out;
+}
+
+.gta-logo {
+  max-width: 280px;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(168, 38, 94, 0.6));
+}
+
+.gta-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 12px;
+  color: #fff;
+  text-shadow: 0 0 10px #a8265e, 0 0 20px #ff007f;
+  margin-top: -10px;
+  font-weight: 900;
+}
+
+/* Lista de opciones interactiva */
+.options-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.menu-item {
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px 20px;
+  position: relative;
+}
+
+/* Efecto hover estilo Rockstar Neón */
+.menu-item:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  transform: scale(1.1);
+}
+
+/* Animación de entrada para el Logo */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ==========================================================================
+   REPRODUCTOR DE AUDIO (AISLADO EN LA ESQUINA)
+   ========================================================================== */
+
+/* Forzamos a que el contenedor de audio flote de forma absoluta en la esquina inferior izquierda */
+.audio-player-wrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100; /* Por encima de todo para asegurar clics si añades botones después */
+}
+
+/* Ocultamos el reproductor nativo para que no rompa la estética del menú */
+.audio-player-wrapper audio {
+  display: none;
+}
+
+/* Indicador de texto minimalista */
+.audio-status {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+}
